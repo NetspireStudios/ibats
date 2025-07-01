@@ -120,8 +120,16 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* Mobile Menu */}
+          {/* Contact Button & Mobile Menu */}
           <div className="flex items-center space-x-4">
+            {/* Contact Us Button - Desktop Only */}
+            <a 
+              href="/contact" 
+              className="hidden lg:flex items-center space-x-2 btn-primary"
+            >
+              <Phone size={16} />
+              <span>Contact Us</span>
+            </a>
 
             {/* Mobile menu button with enhanced animations */}
             <button
@@ -146,7 +154,7 @@ const Navigation = () => {
 
       {/* Mobile Navigation with smooth slide animation */}
       <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-        isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
       }`}>
         <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200 shadow-lg">
           <a
