@@ -1,11 +1,319 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.tsx';
+import Footer from '../components/Footer.tsx';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="IBATS Corp - Trusted Partner in Accounting and Tax Services">
+	<Navigation client:load />
+	
+	<!-- Hero Section -->
+	<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+		<!-- Background -->
+		<div class="absolute inset-0 gradient-bg"></div>
+		<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80')] bg-cover bg-center opacity-10"></div>
+		
+		<!-- Content -->
+		<div class="relative z-10 container-max px-4 sm:px-6 lg:px-8 text-center">
+			<div class="animate-fade-in">
+				<h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+					Trusted Partner in<br />
+					<span class="text-blue-400">Accounting and Tax Services</span>
+				</h1>
+				<p class="text-xl sm:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+					Delivering Value, Building Trust, and Empowering Your Business with Innovative Accounting Solutions
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="/contact" class="btn-primary text-lg px-8 py-4">
+						Get Started
+					</a>
+					<a href="/services" class="btn-outline border-white text-white hover:bg-white hover:text-primary-900 text-lg px-8 py-4">
+						Our Services
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Scroll Indicator -->
+		<div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-slow">
+			<div class="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+				<div class="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why We Stand Out Section -->
+	<section class="section-padding bg-gray-50">
+		<div class="container-max">
+			<div class="text-center mb-16">
+				<h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary-900 mb-4">
+					Why We Stand Out
+				</h2>
+				<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+					Comprehensive financial solutions tailored to meet your unique needs
+				</p>
+			</div>
+			
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+				<!-- All-Inclusive Financial Services -->
+				<div class="card p-8 text-center group">
+					<div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+						<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+						</svg>
+					</div>
+					<h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+						All-Inclusive Financial Services
+					</h3>
+					<p class="text-gray-600 leading-relaxed">
+						IBATS CORP. offers a wide range of services, including bookkeeping, accounting, and tax services, tailored to meet the unique needs of small and medium-sized businesses, as well as individuals. Our comprehensive approach ensures all your financial needs are met under one roof, saving you time and effort.
+					</p>
+				</div>
+
+				<!-- Professional Business Consulting -->
+				<div class="card p-8 text-center group">
+					<div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+						<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+						</svg>
+					</div>
+					<h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+						Professional Business Consulting
+					</h3>
+					<p class="text-gray-600 leading-relaxed">
+						Our team of experienced professionals provides insightful business startup and advisory services, helping you navigate the complexities of establishing and growing your business. We offer strategic guidance to help you make informed decisions and achieve your business goals.
+					</p>
+				</div>
+
+				<!-- Personalized Service -->
+				<div class="card p-8 text-center group">
+					<div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+						<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+						</svg>
+					</div>
+					<h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+						Personalized Service
+					</h3>
+					<p class="text-gray-600 leading-relaxed">
+						At IBATS CORP., we understand that every client is unique. We pride ourselves on delivering personalized service that is tailored to your specific circumstances. Our dedicated team works closely with you to understand your financial situation and provide customized solutions that align with your objectives.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Clients Section -->
+	<section class="section-padding bg-white">
+		<div class="container-max">
+			<div class="text-center mb-16">
+				<h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary-900 mb-4">
+					Here are some of our satisfied clients
+				</h2>
+			</div>
+			
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+				<!-- MedNeedles -->
+				<div class="text-center p-6">
+					<div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-red-600 font-bold text-lg">M</span>
+					</div>
+					<h3 class="font-semibold text-primary-900 mb-2">MedNeedles</h3>
+					<p class="text-gray-600 text-sm">
+						A Canadian Based Business that is committed to providing customers access to a full range of medical supplies at low prices
+					</p>
+				</div>
+
+				<!-- LB Supply -->
+				<div class="text-center p-6">
+					<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-blue-600 font-bold text-lg">L</span>
+					</div>
+					<h3 class="font-semibold text-primary-900 mb-2">LB Supply</h3>
+					<p class="text-gray-600 text-sm">
+						Delivers specialized sourcing, shipping, and warehousing solutions throughout Canada, providing customized services with a steadfast commitment to ensuring product quality
+					</p>
+				</div>
+
+				<!-- Windmill -->
+				<div class="text-center p-6">
+					<div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-green-600 font-bold text-lg">W</span>
+					</div>
+					<h3 class="font-semibold text-primary-900 mb-2">Windmill</h3>
+					<p class="text-gray-600 text-sm">
+						Helps companies reduce costs and improve productivity by optimizing inefficient business processes and implementing solutions that automate and integrate information across the organization
+					</p>
+				</div>
+
+				<!-- LyricVids -->
+				<div class="text-center p-6">
+					<div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-purple-600 font-bold text-lg">L</span>
+					</div>
+					<h3 class="font-semibold text-primary-900 mb-2">LyricVids</h3>
+					<p class="text-gray-600 text-sm">
+						We produce professional animated video content for some of the biggest acts in the music business and artists across all genres
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services Section -->
+	<section class="section-padding bg-gray-50">
+		<div class="container-max">
+			<div class="text-center mb-16">
+				<h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary-900 mb-4">
+					Check out our service offerings
+				</h2>
+			</div>
+			
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+				<!-- Comprehensive Bookkeeping -->
+				<div class="card p-8">
+					<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" alt="Bookkeeping Services" class="w-full h-48 object-cover rounded-lg mb-6" />
+					<h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+						Comprehensive Bookkeeping
+					</h3>
+					<p class="text-gray-600 leading-relaxed mb-6">
+						At <strong>IBATS CORP.</strong>, we provide <strong>comprehensive bookkeeping services</strong> to keep your <strong>financial records accurate, organized, and up-to-date</strong>. Our expert team manages everything from <strong>daily transaction recording</strong> to <strong>accounts payable and receivable</strong>, ensuring seamless financial operations.
+					</p>
+					<a href="/services/bookkeeping" class="btn-primary">Learn More</a>
+				</div>
+
+				<!-- Expert Accounting Services -->
+				<div class="card p-8">
+					<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2415&q=80" alt="Accounting Services" class="w-full h-48 object-cover rounded-lg mb-6" />
+					<h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+						Expert Accounting Services
+					</h3>
+					<p class="text-gray-600 leading-relaxed mb-6">
+						At <strong>IBATS Corp</strong>, we provide <strong>expert accounting services</strong> tailored to strengthen your business's financial foundation. Our comprehensive solutions include <strong>financial statement preparation, budget analysis, and forecasting</strong>, ensuring you have the insights needed for strategic decision-making.
+					</p>
+					<a href="/services/accounting" class="btn-primary">Learn More</a>
+				</div>
+
+				<!-- Tax Planning and Preparation -->
+				<div class="card p-8">
+					<img src="https://images.unsplash.com/photo-1554224154-26032fbc4d72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" alt="Tax Services" class="w-full h-48 object-cover rounded-lg mb-6" />
+					<h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+						Tax Planning and Preparation
+					</h3>
+					<p class="text-gray-600 leading-relaxed mb-6">
+						At <strong>IBATS CORP.</strong>, we provide <strong>professional tax planning and preparation services</strong> for <strong>businesses and individuals</strong>. Our experienced tax specialists stay updated on the latest <strong>tax laws and regulations</strong>, ensuring you claim every <strong>deduction, credit, and tax-saving opportunity</strong> available.
+					</p>
+					<a href="/services/corporate-income-tax" class="btn-primary">Learn More</a>
+				</div>
+			</div>
+
+			<div class="text-center mt-12">
+				<a href="/services" class="btn-secondary">
+					Learn more about all our services
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Testimonials Section -->
+	<section class="section-padding bg-white">
+		<div class="container-max">
+			<div class="text-center mb-16">
+				<h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary-900 mb-4">
+					See what people are saying
+				</h2>
+			</div>
+			
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+				<!-- Testimonial 1 -->
+				<div class="card p-8">
+					<div class="flex items-center mb-4">
+						<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+							<span class="text-blue-600 font-bold">L</span>
+						</div>
+						<div>
+							<h4 class="font-semibold text-primary-900">Salah Mansieh</h4>
+							<p class="text-gray-600 text-sm">CFO, LB Supply</p>
+						</div>
+					</div>
+					<p class="text-gray-600 italic leading-relaxed">
+						"As a growing e-commerce business in the GTA, we needed a remote bookkeeping service that could handle our complex structure from anywhere. For almost three years, their services have been consistently excellent. They are true experts in the field, always responsive, and genuinely helpful."
+					</p>
+				</div>
+
+				<!-- Testimonial 2 -->
+				<div class="card p-8">
+					<div class="flex items-center mb-4">
+						<div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+							<span class="text-purple-600 font-bold">A</span>
+						</div>
+						<div>
+							<h4 class="font-semibold text-primary-900">Anthony Craparotta</h4>
+							<p class="text-gray-600 text-sm">CEO, LyricVids Media Inc.</p>
+						</div>
+					</div>
+					<p class="text-gray-600 italic leading-relaxed">
+						"IBATS Corp has been invaluable in the bookkeeping and accounting of our agency. Since switching our accounts to the team at IBATS we have received such great service and their insights into our books have helped us save money and improve the systems we use to manage our revenue and resources. We're going to be long-term customers going forward!"
+					</p>
+				</div>
+
+				<!-- Testimonial 3 -->
+				<div class="card p-8">
+					<div class="flex items-center mb-4">
+						<div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+							<span class="text-green-600 font-bold">F</span>
+						</div>
+						<div>
+							<h4 class="font-semibold text-primary-900">Francis Campbell</h4>
+							<p class="text-gray-600 text-sm">Owner, Supreme Suds</p>
+						</div>
+					</div>
+					<p class="text-gray-600 italic leading-relaxed">
+						"I own a small local business here in Niagara, and while I've always been great at what I do, I definitely struggled with the backend stuff—especially when I was first starting out and everything got chaotic. After trying four different accountants from a previous company and now with my current business, I can honestly say that IBATS Corp and the team are exactly what I needed. They're incredibly knowledgeable and clearly take great pride in their work. Definitely a 5+ star accounting team! Thanks so much, IBATS Corp"
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA Section -->
+	<section class="section-padding gradient-bg">
+		<div class="container-max text-center">
+			<h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-4">
+				Get Expert Financial Advice Today
+			</h2>
+			<p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+				Ready to streamline your finances and grow your business? Contact us for a complimentary consultation.
+			</p>
+			<a href="/contact" class="btn-primary bg-white text-primary-900 hover:bg-gray-100">
+				Contact Us Today
+			</a>
+		</div>
+	</section>
+
+	<Footer />
 </Layout>
+
+<script>
+	// Add scroll animations
+	const observerOptions = {
+		threshold: 0.1,
+		rootMargin: '0px 0px -50px 0px'
+	};
+
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('animate-slide-up');
+			}
+		});
+	}, observerOptions);
+
+	// Observe all cards and sections
+	document.querySelectorAll('.card, section > div').forEach((el) => {
+		observer.observe(el);
+	});
+</script>

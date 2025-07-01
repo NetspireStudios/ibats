@@ -1,0 +1,232 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.tsx';
+import Footer from '../../components/Footer.tsx';
+---
+
+<Layout title="Bookkeeping Services | Accurate Financial Management | IBATS Corp">
+  <Navigation client:load />
+  
+  <!-- Hero Section -->
+  <section class="relative pt-24 pb-16 bg-gradient-to-br from-primary-900 to-blue-900 text-white overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80')] bg-cover bg-center opacity-10"></div>
+    
+    <div class="relative z-10 container-max px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+          Bookkeeping Services
+        </h1>
+        <p class="text-xl sm:text-2xl text-gray-200 mb-8 leading-relaxed">
+          Precise and dependable bookkeeping services designed to enable you to concentrate on the most critical aspect—expanding your business.
+        </p>
+        <a href="/contact" class="btn-primary bg-white text-primary-900 hover:bg-gray-100">
+          Schedule Your Free Consultation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="section-padding bg-white">
+    <div class="container-max">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+        <div>
+          <h2 class="font-heading text-3xl font-bold text-primary-900 mb-6">
+            Professional Bookkeeping Services
+          </h2>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Bookkeeping entails the systematic documentation of financial transactions for a company, non-profit organization, or individual. Effective bookkeeping necessitates discipline, organization, and a comprehensive understanding of standard accounting principles. 
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Accurate bookkeeping provides a precise account of all financial transactions over a specified period. By meticulously recording financial transactions and activities, one is better positioned to make informed strategic decisions.
+          </p>
+        </div>
+        <div class="relative">
+          <img 
+            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
+            alt="Professional bookkeeper at work in modern office" 
+            class="rounded-lg shadow-xl"
+          />
+          <div class="absolute inset-0 bg-primary-900/10 rounded-lg"></div>
+        </div>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <!-- Bookkeeping -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Daily Bookkeeping
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            We manage your day-to-day financial transactions, including recording income and expenses, ensuring accurate tracking of all financial activities.
+          </p>
+        </div>
+
+        <!-- Month-End Reconciliations -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Month-End Reconciliations
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            At the end of each month, we reconcile your accounts, ensuring that your financial records match bank statements and identifying any discrepancies.
+          </p>
+        </div>
+
+        <!-- Payroll Processing -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v2a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Payroll Processing
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            We handle the payroll process, ensuring your employees are paid accurately and on time, including deductions, benefits, and bonuses.
+          </p>
+        </div>
+
+        <!-- Source Deduction and HST Services -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Source Deduction and HST Services
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            We ensure that payroll source deductions (e.g., taxes, CPP, EI) and HST are calculated and remitted to the appropriate authorities as per government regulations.
+          </p>
+        </div>
+
+        <!-- Cloud-Based Accounting Solutions -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Cloud-Based Accounting Solutions
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            We provide you with secure and efficient cloud-based accounting software to track, manage, and access your financial information anywhere, anytime.
+          </p>
+        </div>
+
+        <!-- Expert Support -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Professional Support
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Our experienced team provides ongoing support and guidance to help you understand your financial position and make informed business decisions.
+          </p>
+        </div>
+      </div>
+
+      <!-- Benefits Section -->
+      <div class="bg-gray-50 rounded-2xl p-8 lg:p-12 mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="font-heading text-3xl font-bold text-primary-900 mb-6">
+              Why Choose Our Bookkeeping Services?
+            </h2>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary-900 mb-1">Accurate & Up-to-Date Records</h3>
+                  <p class="text-gray-600">Keep your financial records accurate, organized, and current with our expert bookkeeping services.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary-900 mb-1">Real-Time Financial Insights</h3>
+                  <p class="text-gray-600">Access real-time financial data to make informed business decisions when you need them most.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary-900 mb-1">Reduce Administrative Burden</h3>
+                  <p class="text-gray-600">Let us handle your bookkeeping so you can focus on growing your business and serving your customers.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary-900 mb-1">Tax Compliance</h3>
+                  <p class="text-gray-600">Stay compliant with tax regulations and be prepared for tax season with organized financial records.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img 
+              src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
+              alt="Modern accounting tools and financial reports" 
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding gradient-bg">
+    <div class="container-max text-center">
+      <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-4">
+        Schedule your complimentary consultation
+      </h2>
+      <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+        Ready to streamline your bookkeeping and improve financial efficiency? Let's discuss how we can help your business grow.
+      </p>
+      <a href="/contact" class="btn-primary bg-white text-primary-900 hover:bg-gray-100 text-lg px-8 py-4">
+        BOOK NOW
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout> 

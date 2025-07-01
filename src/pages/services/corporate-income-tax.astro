@@ -1,0 +1,232 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.tsx';
+import Footer from '../../components/Footer.tsx';
+---
+
+<Layout title="Corporate Income Tax Services | Business Tax Planning | IBATS Corp">
+  <Navigation client:load />
+  
+  <!-- Hero Section -->
+  <section class="relative pt-24 pb-16 bg-gradient-to-br from-primary-900 to-blue-900 text-white overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224154-26032fbc4d72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80')] bg-cover bg-center opacity-10"></div>
+    
+    <div class="relative z-10 container-max px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+          Corporate Income Tax Services
+        </h1>
+        <p class="text-xl sm:text-2xl text-gray-200 mb-8 leading-relaxed">
+          Maximize your business tax savings with our expert corporate tax planning and preparation services.
+        </p>
+        <a href="/contact" class="btn-primary bg-white text-primary-900 hover:bg-gray-100">
+          Optimize Your Business Taxes
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="section-padding bg-white">
+    <div class="container-max">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+        <div>
+          <h2 class="font-heading text-3xl font-bold text-primary-900 mb-6">
+            Expert Corporate Tax Solutions
+          </h2>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            At <strong>IBATS CORP.</strong>, we provide <strong>professional corporate income tax services</strong> designed to help <strong>businesses maximize their tax efficiency</strong> while ensuring <strong>full compliance with Canada Revenue Agency (CRA) regulations</strong>.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Our experienced tax specialists stay updated on the latest <strong>tax laws and regulations</strong>, ensuring your business claims every <strong>deduction, credit, and tax-saving opportunity</strong> available.
+          </p>
+        </div>
+        <div class="relative">
+          <img 
+            src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
+            alt="Corporate tax planning and business financial documents" 
+            class="rounded-lg shadow-xl"
+          />
+          <div class="absolute inset-0 bg-primary-900/10 rounded-lg"></div>
+        </div>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <!-- Corporate Tax Preparation -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Corporate Tax Preparation
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Comprehensive preparation of corporate income tax returns, ensuring accuracy and compliance with CRA requirements while maximizing available deductions.
+          </p>
+        </div>
+
+        <!-- Tax Planning & Strategy -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Tax Planning & Strategy
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Strategic tax planning to minimize your corporate tax burden through legal tax optimization strategies and timing of income and expenses.
+          </p>
+        </div>
+
+        <!-- CRA Compliance -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.586-4.586a2 2 0 112.828 2.828L9 16.586V14h-2.586L9 16.586z"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            CRA Compliance
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Ensure full compliance with Canada Revenue Agency regulations and deadlines, avoiding penalties and interest charges.
+          </p>
+        </div>
+
+        <!-- Business Deductions -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Business Deductions
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Identify and maximize all eligible business deductions including operating expenses, capital cost allowance, and research and development credits.
+          </p>
+        </div>
+
+        <!-- Tax Credits & Incentives -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Tax Credits & Incentives
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Help you take advantage of various tax credits and government incentives available to Canadian businesses.
+          </p>
+        </div>
+
+        <!-- Year-Round Support -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Year-Round Support
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Ongoing support throughout the year for tax-related questions and strategic business decisions.
+          </p>
+        </div>
+      </div>
+
+      <!-- Benefits Section -->
+      <div class="bg-gray-50 rounded-2xl p-8 lg:p-12 mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="font-heading text-3xl font-bold text-primary-900 mb-6">
+              Why Choose Our Corporate Tax Services?
+            </h2>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary-900 mb-1">Maximize Tax Savings</h3>
+                  <p class="text-gray-600">Our experts identify every available deduction and credit to minimize your corporate tax liability.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary-900 mb-1">Stay Compliant</h3>
+                  <p class="text-gray-600">Ensure full compliance with CRA regulations and avoid costly penalties and interest charges.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary-900 mb-1">Expert Knowledge</h3>
+                  <p class="text-gray-600">Work with tax professionals who stay current with the latest Canadian tax laws and regulations.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary-900 mb-1">Strategic Planning</h3>
+                  <p class="text-gray-600">Receive strategic tax planning advice to optimize your business structure and operations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img 
+              src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
+              alt="Corporate tax documents and business planning" 
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding gradient-bg">
+    <div class="container-max text-center">
+      <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-4">
+        Ready to Optimize Your Corporate Taxes?
+      </h2>
+      <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+        Let our corporate tax experts help you minimize your tax burden while staying fully compliant.
+      </p>
+      <a href="/contact" class="btn-primary bg-white text-primary-900 hover:bg-gray-100 text-lg px-8 py-4">
+        Schedule Tax Consultation
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout> 

@@ -1,0 +1,232 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.tsx';
+import Footer from '../../components/Footer.tsx';
+---
+
+<Layout title="Expert Accounting Services | Financial Statements & Analysis | IBATS Corp">
+  <Navigation client:load />
+  
+  <!-- Hero Section -->
+  <section class="relative pt-24 pb-16 bg-gradient-to-br from-primary-900 to-blue-900 text-white overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2415&q=80')] bg-cover bg-center opacity-10"></div>
+    
+    <div class="relative z-10 container-max px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+          Expert Accounting Services
+        </h1>
+        <p class="text-xl sm:text-2xl text-gray-200 mb-8 leading-relaxed">
+          Strengthen your business's financial foundation with comprehensive accounting solutions tailored to your unique needs.
+        </p>
+        <a href="/contact" class="btn-primary bg-white text-primary-900 hover:bg-gray-100">
+          Get Your Financial Analysis
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="section-padding bg-white">
+    <div class="container-max">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+        <div>
+          <h2 class="font-heading text-3xl font-bold text-primary-900 mb-6">
+            Comprehensive Accounting Solutions
+          </h2>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            At <strong>IBATS Corp</strong>, we provide <strong>expert accounting services</strong> tailored to strengthen your business's financial foundation. Our comprehensive solutions include <strong>financial statement preparation, budget analysis, and forecasting</strong>, ensuring you have the insights needed for strategic decision-making.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Our experienced accounting professionals work closely with you to understand your business objectives and provide customized solutions that drive growth and profitability.
+          </p>
+        </div>
+        <div class="relative">
+          <img 
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
+            alt="Financial analysis and accounting services" 
+            class="rounded-lg shadow-xl"
+          />
+          <div class="absolute inset-0 bg-primary-900/10 rounded-lg"></div>
+        </div>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <!-- Financial Statement Preparation -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 3l1.5-1.5L16 9.5L15 10.5L13.5 9"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Financial Statement Preparation
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            We prepare accurate and comprehensive financial statements including balance sheets, income statements, and cash flow statements that provide clear insights into your business performance.
+          </p>
+        </div>
+
+        <!-- Budget Analysis & Forecasting -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Budget Analysis & Forecasting
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Our team provides detailed budget analysis and financial forecasting to help you plan for the future and make informed strategic decisions for your business growth.
+          </p>
+        </div>
+
+        <!-- Cost Management -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Cost Management
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            We help identify cost-saving opportunities and optimize your expenses through detailed cost analysis and strategic recommendations.
+          </p>
+        </div>
+
+        <!-- Performance Analysis -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Performance Analysis
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Gain insights into your business performance with our comprehensive analysis of key financial metrics and profitability indicators.
+          </p>
+        </div>
+
+        <!-- Cash Flow Management -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 12l2 2 4-4"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Cash Flow Management
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Optimize your cash flow with our strategic planning services that help ensure your business maintains healthy liquidity at all times.
+          </p>
+        </div>
+
+        <!-- Financial Consulting -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
+            Financial Consulting
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Our expert consultants provide strategic financial advice to help you make informed decisions and achieve your business objectives.
+          </p>
+        </div>
+      </div>
+
+      <!-- Benefits Section -->
+      <div class="bg-gray-50 rounded-2xl p-8 lg:p-12 mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="font-heading text-3xl font-bold text-primary-900 mb-6">
+              Why Choose Our Accounting Services?
+            </h2>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary-900 mb-1">Strategic Financial Insights</h3>
+                  <p class="text-gray-600">Get clear insights into your business performance with comprehensive financial analysis and reporting.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary-900 mb-1">Expert Professional Team</h3>
+                  <p class="text-gray-600">Work with experienced accountants who understand your industry and business challenges.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary-900 mb-1">Customized Solutions</h3>
+                  <p class="text-gray-600">Receive tailored accounting solutions that align with your specific business objectives and industry requirements.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary-900 mb-1">Growth-Focused Approach</h3>
+                  <p class="text-gray-600">Our accounting services are designed to support your business growth and help you achieve your financial goals.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img 
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
+              alt="Financial charts and business analysis" 
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding gradient-bg">
+    <div class="container-max text-center">
+      <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-4">
+        Ready to Strengthen Your Financial Foundation?
+      </h2>
+      <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+        Let our expert accounting team help you make informed decisions and drive your business growth.
+      </p>
+      <a href="/contact" class="btn-primary bg-white text-primary-900 hover:bg-gray-100 text-lg px-8 py-4">
+        Get Your Financial Analysis
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout> 
