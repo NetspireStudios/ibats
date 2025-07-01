@@ -21,41 +21,121 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-800 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+    background-color: #09001C;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #7f1d1d;
+    transform: scale(1.05);
+  }
+  
+  .btn-primary:focus {
+    outline: 2px solid #dc2626;
+    outline-offset: 2px;
   }
   
   .btn-secondary {
-    @apply bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
   }
   
   .btn-outline {
-    @apply border-2 border-primary-900 text-primary-900 px-6 py-3 rounded-lg font-medium hover:bg-primary-900 hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+    border: 2px solid #09001C;
+    color: #09001C;
+    background-color: transparent;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .btn-outline:hover {
+    background-color: #09001C;
+    color: white;
   }
   
   .card {
-    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    transform: translateY(0);
+  }
+  
+  .card:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: translateY(-4px);
   }
   
   .section-padding {
-    @apply py-16 px-4 sm:px-6 lg:px-8;
+    padding: 4rem 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .section-padding {
+      padding: 4rem 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .section-padding {
+      padding: 4rem 2rem;
+    }
   }
   
   .container-max {
-    @apply max-w-7xl mx-auto;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-br from-primary-900 via-primary-800 to-blue-900;
+    background: linear-gradient(135deg, #09001C 0%, #7f1d1d 50%, #1e3a8a 100%);
   }
   
   .glass-effect {
-    @apply backdrop-blur-sm bg-white/90 border border-white/20;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-primary-900 to-blue-600 bg-clip-text text-transparent;
+    background: linear-gradient(135deg, #09001C 0%, #2563eb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   
   .shadow-glow {
