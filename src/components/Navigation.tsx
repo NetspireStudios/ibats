@@ -120,16 +120,8 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* Contact Button & Mobile Menu */}
+          {/* Mobile Menu */}
           <div className="flex items-center space-x-4">
-            {/* Contact Us Button - Desktop Only */}
-            <a 
-              href="/contact" 
-              className="hidden lg:flex items-center space-x-2 btn-primary"
-            >
-              <Phone size={16} />
-              <span>Contact Us</span>
-            </a>
 
             {/* Mobile menu button with enhanced animations */}
             <button
@@ -205,6 +197,16 @@ const Navigation = () => {
           >
             <DollarSign size={18} />
             <span>Plans & Pricing</span>
+          </a>
+
+          {/* Contact Us - Mobile Only */}
+          <a
+            href="/contact"
+            className="flex items-center space-x-3 text-white bg-blue-600 hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 transform hover:translate-x-1 mx-3 mt-2"
+            onClick={() => setIsOpen(false)}
+          >
+            <Phone size={18} />
+            <span>Contact Us</span>
           </a>
         </div>
       </div>
