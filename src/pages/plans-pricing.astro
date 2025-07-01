@@ -1,0 +1,878 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.tsx';
+import Footer from '../components/Footer.tsx';
+---
+
+<Layout title="Plans & Pricing | Professional Accounting Services | IBATS Corp">
+  <Navigation client:load />
+  
+  <!-- Enhanced Hero Section with Better Spacing -->
+  <section class="relative py-32 overflow-hidden">
+    <!-- Animated Background with Moving Gradient Blobs -->
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-100">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Floating Dollar Signs Animation -->
+    <div class="floating-currency">
+      <div class="currency-symbol currency-1">$</div>
+      <div class="currency-symbol currency-2">%</div>
+      <div class="currency-symbol currency-3">€</div>
+      <div class="currency-symbol currency-4">£</div>
+    </div>
+    
+    <div class="container-max relative z-10">
+      <div class="text-center max-w-4xl mx-auto">
+        <div class="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full text-blue-700 text-sm font-medium mb-6 pulse-badge">
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+          </svg>
+          Transparent Pricing Plans
+        </div>
+        
+        <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          Plans & <span class="gradient-text morphing-text">Pricing</span>
+        </h1>
+        
+        <p class="text-lg text-gray-600 mb-12 leading-relaxed max-w-2xl mx-auto">
+          Choose the perfect plan for your business needs. Professional accounting services with transparent pricing and no hidden fees.
+        </p>
+
+        <!-- Pricing Toggle -->
+        <div class="flex items-center justify-center mb-12">
+          <div class="bg-white rounded-full p-1 shadow-lg border border-gray-200 pricing-toggle">
+            <button class="toggle-btn active" data-type="monthly">Monthly Packages</button>
+            <button class="toggle-btn" data-type="hourly">Hourly Rates</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Monthly Packages Section -->
+  <section class="section-padding bg-white" id="monthly-section">
+    <div class="container-max">
+      <div class="text-center mb-16 scroll-reveal">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          Monthly <span class="gradient-text">Packages</span>
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Fixed monthly rates for comprehensive accounting services</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+        
+        <!-- Fundamental Package -->
+        <div class="pricing-card scroll-reveal">
+          <div class="pricing-header">
+            <div class="pricing-icon gradient-bg-1">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Fundamental</h3>
+            <div class="pricing-amount">
+              <span class="price-currency">$</span>
+              <span class="price-value" data-price="425">425</span>
+              <span class="price-period">/month</span>
+            </div>
+            <p class="text-gray-600 text-sm">Perfect for small businesses</p>
+          </div>
+          
+          <div class="pricing-features">
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Basic bookkeeping services
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Monthly financial statements
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Bank reconciliation
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Email support
+            </div>
+          </div>
+
+          <a href="/contact" class="pricing-cta btn-secondary">
+            Get Started
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Essential Package -->
+        <div class="pricing-card popular scroll-reveal stagger-1">
+          <div class="popular-badge">Most Popular</div>
+          <div class="pricing-header">
+            <div class="pricing-icon gradient-bg-2">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Essential</h3>
+            <div class="pricing-amount">
+              <span class="price-currency">$</span>
+              <span class="price-value" data-price="725">725</span>
+              <span class="price-period">/month</span>
+            </div>
+            <p class="text-gray-600 text-sm">Best for growing businesses</p>
+          </div>
+          
+          <div class="pricing-features">
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Everything in Fundamental
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Payroll processing
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Tax preparation support
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Phone support
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Quarterly reviews
+            </div>
+          </div>
+
+          <a href="/contact" class="pricing-cta btn-primary">
+            Get Started
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Integral Package -->
+        <div class="pricing-card scroll-reveal stagger-2">
+          <div class="pricing-header">
+            <div class="pricing-icon gradient-bg-3">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Integral</h3>
+            <div class="pricing-amount">
+              <span class="price-currency">$</span>
+              <span class="price-value" data-price="1025">1025</span>
+              <span class="price-period">/month</span>
+            </div>
+            <p class="text-gray-600 text-sm">Enterprise-level service</p>
+          </div>
+          
+          <div class="pricing-features">
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Everything in Essential
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Strategic financial planning
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Priority support
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Dedicated account manager
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Custom reporting
+            </div>
+          </div>
+
+          <a href="/contact" class="pricing-cta btn-secondary">
+            Get Started
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hourly Rates Section -->
+  <section class="section-padding gradient-bg hidden" id="hourly-section">
+    <div class="container-max">
+      <div class="text-center mb-16 scroll-reveal">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          Hourly <span class="gradient-text">Rates</span>
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Flexible hourly pricing for specific project needs</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+        
+        <!-- Part Time -->
+        <div class="pricing-card hourly-card scroll-reveal">
+          <div class="pricing-header">
+            <div class="pricing-icon gradient-bg-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Part Time</h3>
+            <div class="pricing-amount">
+              <span class="price-currency">$</span>
+              <span class="price-value">55</span>
+              <span class="price-period">/hour</span>
+            </div>
+            <p class="text-gray-600 text-sm">Less than 20 hours/week</p>
+          </div>
+          
+          <div class="pricing-features">
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Flexible scheduling
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Project-based work
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Email support
+            </div>
+          </div>
+
+          <a href="/contact" class="pricing-cta btn-secondary">
+            Get Quote
+          </a>
+        </div>
+
+        <!-- Full Time -->
+        <div class="pricing-card hourly-card popular scroll-reveal stagger-1">
+          <div class="popular-badge">Best Value</div>
+          <div class="pricing-header">
+            <div class="pricing-icon gradient-bg-5">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Full Time</h3>
+            <div class="pricing-amount">
+              <span class="price-currency">$</span>
+              <span class="price-value">50</span>
+              <span class="price-period">/hour</span>
+            </div>
+            <p class="text-gray-600 text-sm">20+ hours/week commitment</p>
+          </div>
+          
+          <div class="pricing-features">
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Regular schedule
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Ongoing support
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Priority response
+            </div>
+          </div>
+
+          <a href="/contact" class="pricing-cta btn-primary">
+            Get Quote
+          </a>
+        </div>
+
+        <!-- Hourly Consultation -->
+        <div class="pricing-card hourly-card scroll-reveal stagger-2">
+          <div class="pricing-header">
+            <div class="pricing-icon gradient-bg-6">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Hourly</h3>
+            <div class="pricing-amount">
+              <span class="price-currency">$</span>
+              <span class="price-value">65</span>
+              <span class="price-period">/hour</span>
+            </div>
+            <p class="text-gray-600 text-sm">Ad-hoc consultation</p>
+          </div>
+          
+          <div class="pricing-features">
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Expert consultation
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Problem-solving focus
+            </div>
+            <div class="feature-item">
+              <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              No long-term commitment
+            </div>
+          </div>
+
+          <a href="/contact" class="pricing-cta btn-secondary">
+            Get Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Comparison -->
+  <section class="section-padding bg-white">
+    <div class="container-max">
+      <div class="text-center mb-16 scroll-reveal">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          Why Choose <span class="gradient-text">IBATS</span>?
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Professional accounting services with transparent pricing and proven results</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Feature 1 -->
+        <div class="feature-highlight scroll-reveal">
+          <div class="feature-icon-wrapper">
+            <div class="feature-icon-bg gradient-bg-1">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">No Hidden Fees</h3>
+          <p class="text-gray-600 text-sm">Transparent pricing with no surprises or hidden charges.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-highlight scroll-reveal stagger-1">
+          <div class="feature-icon-wrapper">
+            <div class="feature-icon-bg gradient-bg-2">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">24h Response</h3>
+          <p class="text-gray-600 text-sm">Quick response times for all your accounting needs.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-highlight scroll-reveal stagger-2">
+          <div class="feature-icon-wrapper">
+            <div class="feature-icon-bg gradient-bg-3">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Expert Team</h3>
+          <p class="text-gray-600 text-sm">Certified professionals with 20+ years experience.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-highlight scroll-reveal stagger-3">
+          <div class="feature-icon-wrapper">
+            <div class="feature-icon-bg gradient-bg-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Personal Touch</h3>
+          <p class="text-gray-600 text-sm">Dedicated support focused on building lasting relationships.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="section-padding bg-gradient-to-br from-blue-600 to-blue-800 relative overflow-hidden">
+    <div class="absolute inset-0">
+      <div class="blob blob-cta-1"></div>
+      <div class="blob blob-cta-2"></div>
+    </div>
+    
+    <div class="container-max relative z-10 text-center">
+      <div class="scroll-reveal">
+        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Ready to Get Started?</h2>
+        <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          Schedule your free consultation today and discover how IBATS can help streamline your finances.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="btn-primary bg-white text-blue-700 hover:bg-blue-50">
+            Start Free Consultation
+          </a>
+          <a href="/about" class="btn-secondary border-white text-white hover:bg-white hover:text-blue-700">
+            Learn More About Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+
+  <script>
+    // Enhanced Pricing Page Animation System
+    document.addEventListener('DOMContentLoaded', function() {
+      // Scroll Reveal Animation
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.scroll-reveal').forEach(el => {
+        observer.observe(el);
+      });
+
+      // Pricing Toggle Functionality
+      const toggleButtons = document.querySelectorAll('.toggle-btn');
+      const monthlySection = document.getElementById('monthly-section');
+      const hourlySection = document.getElementById('hourly-section');
+
+      toggleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const type = button.getAttribute('data-type');
+          
+          // Update active state
+          toggleButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          
+          // Toggle sections
+          if (type === 'monthly') {
+            if (monthlySection) {
+              monthlySection.classList.remove('hidden');
+            }
+            if (hourlySection) {
+              hourlySection.classList.add('hidden');
+            }
+          } else {
+            if (monthlySection) {
+              monthlySection.classList.add('hidden');
+            }
+            if (hourlySection) {
+              hourlySection.classList.remove('hidden');
+            }
+          }
+        });
+      });
+
+      // Pricing Cards Hover Effect
+      document.querySelectorAll('.pricing-card').forEach(card => {
+        if (card instanceof HTMLElement) {
+          card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateY(-10px) scale(1.02)';
+          });
+
+          card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0) scale(1)';
+          });
+        }
+      });
+
+      // Animated Price Counter
+      const priceValues = document.querySelectorAll('.price-value');
+      priceValues.forEach(priceElement => {
+        if (priceElement instanceof HTMLElement) {
+          const targetPrice = parseInt(priceElement.getAttribute('data-price') || priceElement.textContent || '0');
+          let currentPrice = 0;
+          const increment = targetPrice / 60; // 1 second animation
+          
+          const timer = setInterval(() => {
+            currentPrice += increment;
+            if (currentPrice >= targetPrice) {
+              currentPrice = targetPrice;
+              clearInterval(timer);
+            }
+            priceElement.textContent = Math.floor(currentPrice).toString();
+          }, 16);
+        }
+      });
+    });
+  </script>
+
+  <style>
+    /* Pricing Page Specific Animations */
+
+    /* Floating Currency Symbols */
+    .floating-currency {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .currency-symbol {
+      position: absolute;
+      font-size: 3rem;
+      font-weight: bold;
+      color: rgba(59, 130, 246, 0.1);
+      animation: currencyFloat 20s infinite linear;
+    }
+
+    .currency-1 {
+      top: 20%;
+      left: 10%;
+      animation-delay: 0s;
+    }
+
+    .currency-2 {
+      top: 60%;
+      right: 15%;
+      animation-delay: -5s;
+    }
+
+    .currency-3 {
+      bottom: 30%;
+      left: 20%;
+      animation-delay: -10s;
+    }
+
+    .currency-4 {
+      top: 40%;
+      right: 40%;
+      animation-delay: -15s;
+    }
+
+    @keyframes currencyFloat {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Pricing Toggle */
+    .pricing-toggle {
+      position: relative;
+    }
+
+    .toggle-btn {
+      padding: 0.75rem 2rem;
+      border: none;
+      background: transparent;
+      color: #6b7280;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 9999px;
+      transition: all 0.3s ease;
+      position: relative;
+      z-index: 2;
+    }
+
+    .toggle-btn.active {
+      color: white;
+      background: linear-gradient(135deg, var(--primary-600), var(--primary-700));
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    }
+
+    /* Pricing Cards */
+    .pricing-card {
+      background: white;
+      border-radius: 1.5rem;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      border: 2px solid transparent;
+    }
+
+    .pricing-card:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-500), var(--primary-700));
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .pricing-card:hover:before {
+      transform: scaleX(1);
+    }
+
+    .pricing-card.popular {
+      border-color: var(--primary-500);
+      transform: scale(1.05);
+    }
+
+    .pricing-card.popular:before {
+      transform: scaleX(1);
+    }
+
+    .popular-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: linear-gradient(135deg, var(--primary-600), var(--primary-700));
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      animation: badgeGlow 2s ease-in-out infinite;
+    }
+
+    @keyframes badgeGlow {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+      }
+    }
+
+    /* Pricing Header */
+    .pricing-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .pricing-icon {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      animation: iconPulse 3s ease-in-out infinite;
+    }
+
+    .pricing-amount {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .price-currency {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary-600);
+    }
+
+    .price-value {
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--primary-700);
+      margin: 0 0.25rem;
+    }
+
+    .price-period {
+      font-size: 1rem;
+      color: #6b7280;
+      font-weight: 500;
+    }
+
+    /* Feature List */
+    .pricing-features {
+      margin-bottom: 2rem;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 0;
+      color: #374151;
+      font-weight: 500;
+      border-bottom: 1px solid #f3f4f6;
+      animation: featureSlideIn 0.6s ease-out;
+      animation-fill-mode: both;
+    }
+
+    .feature-item:nth-child(1) { animation-delay: 0.1s; }
+    .feature-item:nth-child(2) { animation-delay: 0.2s; }
+    .feature-item:nth-child(3) { animation-delay: 0.3s; }
+    .feature-item:nth-child(4) { animation-delay: 0.4s; }
+    .feature-item:nth-child(5) { animation-delay: 0.5s; }
+
+    .feature-item:last-child {
+      border-bottom: none;
+    }
+
+    .feature-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      color: var(--primary-600);
+      flex-shrink: 0;
+    }
+
+    @keyframes featureSlideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Pricing CTA */
+    .pricing-cta {
+      width: 100%;
+      justify-content: center;
+      padding: 1rem 2rem;
+      font-size: 1.125rem;
+      font-weight: 700;
+    }
+
+    /* Feature Highlights */
+    .feature-highlight {
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: highlightFloat 0.8s ease-out;
+    }
+
+    .feature-icon-wrapper {
+      margin-bottom: 1.5rem;
+    }
+
+    .feature-icon-bg {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      animation: iconRotate 10s linear infinite;
+    }
+
+    @keyframes iconRotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes highlightFloat {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Gradient Backgrounds */
+    .gradient-bg-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    .gradient-bg-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+    .gradient-bg-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+    .gradient-bg-4 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+    .gradient-bg-5 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+    .gradient-bg-6 { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .pricing-card.popular {
+        transform: none;
+      }
+      
+      .price-value {
+        font-size: 2.5rem;
+      }
+      
+      .pricing-card {
+        padding: 2rem 1.5rem;
+      }
+      
+      .feature-icon-bg {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  </style>
+</Layout> 

@@ -161,8 +161,66 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Google Maps & Contact Section */}
+        <div className="border-t border-white/10 mt-12 pt-12">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            {/* Google Maps */}
+            <div>
+              <h3 className="font-heading font-semibold text-lg mb-4 text-white">Visit Our Office</h3>
+              <div className="relative h-64 rounded-xl overflow-hidden border border-white/20">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23239.82708162644!2d-79.25091!3d43.159718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d350cd8d1bb84b%3A0x2a3e06d2b8bcbfdf!2sSt.%20Catharines%2C%20ON!5e0!3m2!1sen!2sca!4v1672147200000!5m2!1sen!2sca"
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="grayscale hover:grayscale-0 transition-all duration-300"
+                ></iframe>
+              </div>
+            </div>
+
+            {/* Mini Contact Form */}
+            <div>
+              <h3 className="font-heading font-semibold text-lg mb-4 text-white">Quick Contact</h3>
+              <form className="space-y-4">
+                <div className="grid grid-cols-2 gap-4">
+                  <input 
+                    type="text" 
+                    placeholder="First Name"
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-blue-400 transition-colors duration-200"
+                  />
+                  <input 
+                    type="text" 
+                    placeholder="Last Name"
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-blue-400 transition-colors duration-200"
+                  />
+                </div>
+                <input 
+                  type="email" 
+                  placeholder="Email Address"
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-blue-400 transition-colors duration-200"
+                />
+                <textarea 
+                  placeholder="How can we help you?"
+                  rows={3}
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-blue-400 transition-colors duration-200 resize-none"
+                ></textarea>
+                <button 
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-600 hover:to-blue-800 transition-all duration-200 flex items-center justify-center space-x-2"
+                >
+                  <span>Send Message</span>
+                  <ArrowRight size={16} />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 mt-12 pt-8">
+        <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
               © 2025 IBATS CORP. All rights reserved.

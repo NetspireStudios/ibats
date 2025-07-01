@@ -7,267 +7,743 @@ import Footer from '../components/Footer.tsx';
 <Layout title="Contact Us | Get in Touch with IBATS Corp | Professional Accounting Services">
   <Navigation client:load />
   
-  <!-- Hero Section -->
-  <section class="relative pt-24 pb-16 bg-gradient-to-br from-primary-900 to-blue-900 text-white overflow-hidden">
-    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80')] bg-cover bg-center opacity-10"></div>
-    
-    <div class="relative z-10 container-max px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-          Contact Us
+  <!-- Enhanced Hero Section with Better Spacing -->
+  <section class="relative py-32 overflow-hidden">
+    <!-- Animated Background with Moving Gradient Blobs -->
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-100">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Floating Contact Icons Animation -->
+    <div class="floating-icons">
+      <div class="floating-icon floating-icon-1">
+        <svg class="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+        </svg>
+      </div>
+      <div class="floating-icon floating-icon-2">
+        <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+        </svg>
+      </div>
+      <div class="floating-icon floating-icon-3">
+        <svg class="w-6 h-6 text-blue-700" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="container-max relative z-10">
+      <div class="text-center max-w-4xl mx-auto">
+        <div class="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full text-blue-700 text-sm font-medium mb-6 pulse-badge">
+          <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+          </svg>
+          Let's Start Your Financial Journey
+        </div>
+        
+        <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          Get in <span class="gradient-text morphing-text">Touch</span>
         </h1>
-        <p class="text-xl sm:text-2xl text-gray-200 mb-8 leading-relaxed">
-          Ready to streamline your finances and grow your business? Get in touch for a complimentary consultation.
+        
+        <p class="text-lg text-gray-600 mb-12 leading-relaxed max-w-2xl mx-auto">
+          Ready to streamline your finances and grow your business? Get in touch for a complimentary consultation with our financial experts.
         </p>
+
+        <!-- Quick Contact Stats -->
+        <div class="grid grid-cols-3 gap-8 max-w-lg mx-auto">
+          <div class="floating-stat">
+            <div class="text-2xl font-bold text-blue-600 mb-1">24h</div>
+            <p class="text-sm text-gray-600">Response Time</p>
+          </div>
+          <div class="floating-stat" style="animation-delay: 0.2s;">
+            <div class="text-2xl font-bold text-blue-600 mb-1">100%</div>
+            <p class="text-sm text-gray-600">Free Consultation</p>
+          </div>
+          <div class="floating-stat" style="animation-delay: 0.4s;">
+            <div class="text-2xl font-bold text-blue-600 mb-1">20+</div>
+            <p class="text-sm text-gray-600">Years Experience</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact Section with Interactive Forms -->
   <section class="section-padding bg-white">
     <div class="container-max">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <!-- Contact Form -->
-        <div class="card p-8">
-          <h2 class="font-heading text-2xl font-bold text-primary-900 mb-6">
-            Get Your Free Consultation
-          </h2>
-          <form class="space-y-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">
-                  First Name *
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        
+        <!-- Interactive Contact Form -->
+        <div class="scroll-reveal">
+          <div class="card p-8 hover-lift interactive-form">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              Get Your <span class="gradient-text">Free Consultation</span>
+            </h2>
+            
+            <form class="space-y-6" id="contactForm">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="form-group">
+                  <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">
+                    First Name *
+                  </label>
+                  <input 
+                    type="text" 
+                    id="firstName" 
+                    name="firstName" 
+                    required
+                    class="form-input"
+                    placeholder="John"
+                  />
+                  <div class="input-focus-line"></div>
+                </div>
+                <div class="form-group">
+                  <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">
+                    Last Name *
+                  </label>
+                  <input 
+                    type="text" 
+                    id="lastName" 
+                    name="lastName" 
+                    required
+                    class="form-input"
+                    placeholder="Doe"
+                  />
+                  <div class="input-focus-line"></div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+                  Email Address *
+                </label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required
+                  class="form-input"
+                  placeholder="john@example.com"
+                />
+                <div class="input-focus-line"></div>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
+                  Phone Number
+                </label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone"
+                  class="form-input"
+                  placeholder="+1 (555) 123-4567"
+                />
+                <div class="input-focus-line"></div>
+              </div>
+              
+              <div class="form-group">
+                <label for="company" class="block text-sm font-medium text-gray-700 mb-2">
+                  Company Name
                 </label>
                 <input 
                   type="text" 
-                  id="firstName" 
-                  name="firstName" 
-                  required
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
-                  placeholder="John"
+                  id="company" 
+                  name="company"
+                  class="form-input"
+                  placeholder="Your Company"
                 />
+                <div class="input-focus-line"></div>
               </div>
-              <div>
-                <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">
-                  Last Name *
+              
+              <div class="form-group">
+                <label for="service" class="block text-sm font-medium text-gray-700 mb-2">
+                  Service of Interest
                 </label>
-                <input 
-                  type="text" 
-                  id="lastName" 
-                  name="lastName" 
-                  required
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
-                  placeholder="Doe"
-                />
+                <select 
+                  id="service" 
+                  name="service"
+                  class="form-input"
+                >
+                  <option value="">Select a service</option>
+                  <option value="bookkeeping">Bookkeeping</option>
+                  <option value="accounting">Accounting</option>
+                  <option value="corporate-tax">Corporate Income Tax</option>
+                  <option value="personal-tax">Personal Income Tax</option>
+                  <option value="business-advisory">Business Advisory</option>
+                  <option value="consultation">General Consultation</option>
+                </select>
+                <div class="input-focus-line"></div>
               </div>
-            </div>
-            
-            <div>
-              <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
-                Email Address *
-              </label>
-              <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                required
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
-                placeholder="john@example.com"
-              />
-            </div>
-            
-            <div>
-              <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
-                Phone Number
-              </label>
-              <input 
-                type="tel" 
-                id="phone" 
-                name="phone"
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
-                placeholder="+1 (555) 123-4567"
-              />
-            </div>
-            
-            <div>
-              <label for="company" class="block text-sm font-medium text-gray-700 mb-2">
-                Company Name
-              </label>
-              <input 
-                type="text" 
-                id="company" 
-                name="company"
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
-                placeholder="Your Company"
-              />
-            </div>
-            
-            <div>
-              <label for="service" class="block text-sm font-medium text-gray-700 mb-2">
-                Service of Interest
-              </label>
-              <select 
-                id="service" 
-                name="service"
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
+              
+              <div class="form-group">
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
+                  Message *
+                </label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="4" 
+                  required
+                  class="form-input"
+                  placeholder="Please describe how we can help you..."
+                ></textarea>
+                <div class="input-focus-line"></div>
+              </div>
+              
+              <button 
+                type="submit"
+                class="w-full btn-primary submit-button"
               >
-                <option value="">Select a service</option>
-                <option value="bookkeeping">Bookkeeping</option>
-                <option value="accounting">Accounting</option>
-                <option value="corporate-tax">Corporate Income Tax</option>
-                <option value="personal-tax">Personal Income Tax</option>
-                <option value="business-advisory">Business Advisory</option>
-                <option value="consultation">General Consultation</option>
-              </select>
-            </div>
-            
-            <div>
-              <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
-                Message *
-              </label>
-              <textarea 
-                id="message" 
-                name="message" 
-                rows="4" 
-                required
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
-                placeholder="Please describe how we can help you..."
-              ></textarea>
-            </div>
-            
-            <button 
-              type="submit"
-              class="w-full btn-primary text-lg py-4"
-            >
-              Send Message
-            </button>
-          </form>
+                <span class="button-text">Send Message</span>
+                <svg class="button-icon w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
 
-        <!-- Contact Information -->
+        <!-- Contact Information with Animated Cards -->
         <div class="space-y-8">
+          
           <!-- Contact Details -->
-          <div class="card p-8">
-            <h3 class="font-heading text-xl font-bold text-primary-900 mb-6">
-              Contact Information
-            </h3>
-            <div class="space-y-4">
-              <div class="flex items-center space-x-4">
-                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                  </svg>
+          <div class="scroll-reveal stagger-1">
+            <div class="card p-8 hover-lift contact-info-card">
+              <h3 class="text-xl font-bold text-gray-900 mb-6">
+                Contact Information
+              </h3>
+              <div class="space-y-6">
+                <div class="flex items-center space-x-4 contact-item">
+                  <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center icon-bounce">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">Location</h4>
+                    <p class="text-gray-600">St. Catharines, Ontario, Canada</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 class="font-semibold text-primary-900">Location</h4>
-                  <p class="text-gray-600">St. Catharines, Ontario, Canada</p>
+                
+                <div class="flex items-center space-x-4 contact-item" style="animation-delay: 0.1s;">
+                  <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center icon-bounce" style="animation-delay: 0.5s;">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">Email</h4>
+                    <a href="mailto:info@ibats.ca" class="text-blue-600 hover:text-blue-700 transition-colors duration-200">
+                      info@ibats.ca
+                    </a>
+                  </div>
                 </div>
-              </div>
-              
-              <div class="flex items-center space-x-4">
-                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-primary-900">Email</h4>
-                  <a href="mailto:info@ibats.ca" class="text-blue-600 hover:text-blue-700 transition-colors duration-200">
-                    info@ibats.ca
-                  </a>
-                </div>
-              </div>
-              
-              <div class="flex items-center space-x-4">
-                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-primary-900">Business Hours</h4>
-                  <p class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                  <p class="text-gray-600">Saturday: By Appointment</p>
-                  <p class="text-gray-600">Sunday: Closed</p>
+                
+                <div class="flex items-center space-x-4 contact-item" style="animation-delay: 0.2s;">
+                  <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center icon-bounce" style="animation-delay: 1s;">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">Business Hours</h4>
+                    <p class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p class="text-gray-600">Saturday: By Appointment</p>
+                    <p class="text-gray-600">Sunday: Closed</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Why Choose Us -->
-          <div class="card p-8">
-            <h3 class="font-heading text-xl font-bold text-primary-900 mb-6">
-              Why Choose IBATS Corp?
-            </h3>
-            <div class="space-y-4">
-              <div class="flex items-start space-x-3">
-                <div class="w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                  </svg>
+          <!-- Why Choose Us with Animated Features -->
+          <div class="scroll-reveal stagger-2">
+            <div class="card p-8 hover-lift">
+              <h3 class="text-xl font-bold text-gray-900 mb-6">
+                Why Choose IBATS?
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-center gap-3 feature-item">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full animate-ping"></div>
+                  <span class="text-gray-700">Free initial consultation</span>
                 </div>
-                <p class="text-gray-600">Free initial consultation</p>
-              </div>
-              
-              <div class="flex items-start space-x-3">
-                <div class="w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                  </svg>
+                <div class="flex items-center gap-3 feature-item" style="animation-delay: 0.1s;">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full animate-ping" style="animation-delay: 0.2s;"></div>
+                  <span class="text-gray-700">20+ years of experience</span>
                 </div>
-                <p class="text-gray-600">Personalized service approach</p>
-              </div>
-              
-              <div class="flex items-start space-x-3">
-                <div class="w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                  </svg>
+                <div class="flex items-center gap-3 feature-item" style="animation-delay: 0.2s;">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full animate-ping" style="animation-delay: 0.4s;"></div>
+                  <span class="text-gray-700">Certified professionals</span>
                 </div>
-                <p class="text-gray-600">Expert knowledge and experience</p>
-              </div>
-              
-              <div class="flex items-start space-x-3">
-                <div class="w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                  </svg>
+                <div class="flex items-center gap-3 feature-item" style="animation-delay: 0.3s;">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full animate-ping" style="animation-delay: 0.6s;"></div>
+                  <span class="text-gray-700">Personal relationship focused</span>
                 </div>
-                <p class="text-gray-600">Competitive pricing</p>
               </div>
             </div>
           </div>
+
+          <!-- Quick Links -->
+          <div class="scroll-reveal stagger-3">
+            <div class="card p-8 hover-lift quick-links-card">
+              <h3 class="text-xl font-bold text-gray-900 mb-6">Quick Links</h3>
+              <div class="grid grid-cols-2 gap-4">
+                <a href="/services/bookkeeping" class="quick-link">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                  Bookkeeping
+                </a>
+                <a href="/services/accounting" class="quick-link">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                  Accounting
+                </a>
+                <a href="/services/personal-income-tax" class="quick-link">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                  Personal Tax
+                </a>
+                <a href="/services/business-advisory" class="quick-link">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                  Advisory
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action with Particle Effects -->
+  <section class="section-padding bg-gradient-to-br from-blue-600 to-blue-800 relative overflow-hidden">
+    <div class="absolute inset-0">
+      <div class="blob blob-cta-1"></div>
+      <div class="blob blob-cta-2"></div>
+    </div>
+
+    <!-- Particle System -->
+    <div class="particles">
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+      <div class="particle particle-5"></div>
+    </div>
+    
+    <div class="container-max relative z-10 text-center">
+      <div class="scroll-reveal">
+        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Ready to Get Started?</h2>
+        <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          Join hundreds of satisfied clients who trust IBATS with their financial success.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#contactForm" class="btn-primary bg-white text-blue-700 hover:bg-blue-50 scroll-to-form">
+            Start Free Consultation
+          </a>
+          <a href="/about" class="btn-secondary border-white text-white hover:bg-white hover:text-blue-700">
+            Learn More About Us
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <Footer />
-</Layout>
 
-<script>
-  // Handle form submission
-  document.querySelector('form')?.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(this);
-    const data = Object.fromEntries(formData.entries());
-    
-    // Simple validation
-    if (!data.firstName || !data.lastName || !data.email || !data.message) {
-      alert('Please fill in all required fields.');
-      return;
+  <script>
+    // Enhanced Contact Page Animation System
+    document.addEventListener('DOMContentLoaded', function() {
+      // Scroll Reveal Animation
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.scroll-reveal').forEach(el => {
+        observer.observe(el);
+      });
+
+             // Form Input Animation System
+       const formInputs = document.querySelectorAll('.form-input');
+       formInputs.forEach(input => {
+         if (input instanceof HTMLInputElement || input instanceof HTMLTextAreaElement || input instanceof HTMLSelectElement) {
+           const parent = input.closest('.form-group');
+           const focusLine = parent?.querySelector('.input-focus-line');
+
+           input.addEventListener('focus', () => {
+             parent?.classList.add('focused');
+             if (focusLine instanceof HTMLElement) {
+               focusLine.style.transform = 'scaleX(1)';
+             }
+           });
+
+           input.addEventListener('blur', () => {
+             if (!input.value) {
+               parent?.classList.remove('focused');
+             }
+             if (focusLine instanceof HTMLElement) {
+               focusLine.style.transform = 'scaleX(0)';
+             }
+           });
+
+           // Keep focused state if input has value
+           if (input.value) {
+             parent?.classList.add('focused');
+           }
+         }
+       });
+
+      // Smooth scroll to form
+      document.querySelectorAll('.scroll-to-form').forEach(button => {
+        button.addEventListener('click', (e) => {
+          e.preventDefault();
+          const form = document.getElementById('contactForm');
+          if (form) {
+            form.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+             // Submit Button Animation
+       const submitButton = document.querySelector('.submit-button');
+       const contactForm = document.getElementById('contactForm');
+       
+       if (contactForm instanceof HTMLFormElement && submitButton instanceof HTMLElement) {
+         contactForm.addEventListener('submit', (e) => {
+           e.preventDefault();
+           
+           // Button loading animation
+           submitButton.classList.add('loading');
+           submitButton.innerHTML = `
+             <div class="loading-spinner"></div>
+             Sending...
+           `;
+           
+           // Simulate form submission
+           setTimeout(() => {
+             submitButton.classList.remove('loading');
+             submitButton.classList.add('success');
+             submitButton.innerHTML = `
+               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+               </svg>
+               Message Sent!
+             `;
+             
+             // Reset form
+             contactForm.reset();
+             
+             // Reset button after 3 seconds
+             setTimeout(() => {
+               submitButton.classList.remove('success');
+               submitButton.innerHTML = `
+                 <span class="button-text">Send Message</span>
+                 <svg class="button-icon w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                 </svg>
+               `;
+             }, 3000);
+           }, 2000);
+         });
+       }
+    });
+  </script>
+
+  <style>
+    /* Contact Page Specific Animations */
+
+    /* Floating Icons */
+    .floating-icons {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
     }
-    
-    // Here you would typically send the data to your backend
-    console.log('Form submitted:', data);
-    
-    // Show success message
-    alert('Thank you for your message! We will get back to you within 24 hours.');
-    
-    // Reset form
-    this.reset();
-  });
-</script> 
+
+    .floating-icon {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      animation: iconOrbit 20s infinite linear;
+    }
+
+    .floating-icon-1 {
+      top: 20%;
+      left: 15%;
+      animation-delay: 0s;
+    }
+
+    .floating-icon-2 {
+      top: 60%;
+      right: 20%;
+      animation-delay: -7s;
+    }
+
+    .floating-icon-3 {
+      bottom: 30%;
+      left: 25%;
+      animation-delay: -14s;
+    }
+
+    @keyframes iconOrbit {
+      0% {
+        transform: rotate(0deg) translateX(50px) rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg) translateX(50px) rotate(-360deg);
+      }
+    }
+
+    /* Pulse Badge */
+    .pulse-badge {
+      animation: badgePulse 2s ease-in-out infinite;
+    }
+
+    @keyframes badgePulse {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+      }
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 20px rgba(59, 130, 246, 0);
+      }
+    }
+
+    /* Floating Stats */
+    .floating-stat {
+      background: white;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      animation: statFloat 3s ease-in-out infinite;
+    }
+
+    @keyframes statFloat {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    /* Interactive Form Styles */
+    .interactive-form {
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .form-group {
+      position: relative;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #e5e7eb;
+      border-radius: 8px;
+      background: white;
+      transition: all 0.3s ease;
+      font-size: 16px;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: #3b82f6;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15);
+    }
+
+    .input-focus-line {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+      border-radius: 1px;
+    }
+
+    /* Contact Item Animation */
+    .contact-item {
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: slideInLeft 0.6s ease-out forwards;
+    }
+
+    .icon-bounce {
+      animation: iconBounce 2s ease-in-out infinite;
+    }
+
+    @keyframes iconBounce {
+      0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-5px) rotate(5deg);
+      }
+    }
+
+    /* Feature Items */
+    .feature-item {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: slideUp 0.6s ease-out forwards;
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Quick Links */
+    .quick-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem;
+      background: #f8fafc;
+      border-radius: 0.5rem;
+      color: #475569;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .quick-link:hover {
+      background: #e2e8f0;
+      color: #3b82f6;
+      transform: translateX(5px);
+    }
+
+    /* Submit Button Animations */
+    .submit-button {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .submit-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+    }
+
+    .submit-button.loading {
+      background: #9ca3af;
+      cursor: not-allowed;
+    }
+
+    .submit-button.success {
+      background: #10b981;
+    }
+
+    .loading-spinner {
+      width: 20px;
+      height: 20px;
+      border: 2px solid transparent;
+      border-top: 2px solid white;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      display: inline-block;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Particle System */
+    .particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      animation: particleFloat 15s infinite linear;
+    }
+
+    .particle-1 {
+      left: 10%;
+      animation-delay: 0s;
+    }
+
+    .particle-2 {
+      left: 30%;
+      animation-delay: -3s;
+    }
+
+    .particle-3 {
+      left: 50%;
+      animation-delay: -6s;
+    }
+
+    .particle-4 {
+      left: 70%;
+      animation-delay: -9s;
+    }
+
+    .particle-5 {
+      left: 90%;
+      animation-delay: -12s;
+    }
+
+    @keyframes particleFloat {
+      0% {
+        transform: translateY(100vh) scale(0);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100px) scale(1);
+        opacity: 0;
+      }
+    }
+  </style>
+</Layout> 

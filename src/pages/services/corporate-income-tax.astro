@@ -4,229 +4,318 @@ import Navigation from '../../components/Navigation.tsx';
 import Footer from '../../components/Footer.tsx';
 ---
 
-<Layout title="Corporate Income Tax Services | Business Tax Planning | IBATS Corp">
-  <Navigation client:load />
-  
-  <!-- Hero Section -->
-  <section class="relative pt-24 pb-16 bg-gradient-to-br from-primary-900 to-blue-900 text-white overflow-hidden">
-    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224154-26032fbc4d72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80')] bg-cover bg-center opacity-10"></div>
-    
-    <div class="relative z-10 container-max px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-          Corporate Income Tax Services
-        </h1>
-        <p class="text-xl sm:text-2xl text-gray-200 mb-8 leading-relaxed">
-          Maximize your business tax savings with our expert corporate tax planning and preparation services.
-        </p>
-        <a href="/contact" class="btn-primary bg-white text-primary-900 hover:bg-gray-100">
-          Optimize Your Business Taxes
-        </a>
-      </div>
-    </div>
-  </section>
+<Layout title="Corporate Income Tax Services | IBATS - Expert Tax Planning & Compliance">
+	<Navigation client:load />
+	
+	<!-- Enhanced Hero Section -->
+	<section class="relative py-32 overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
+		<!-- Liquid Background Effects -->
+		<div class="absolute inset-0">
+			<div class="liquid-bg-1"></div>
+			<div class="liquid-bg-2"></div>
+		</div>
+		
+		<!-- Floating Financial Symbols -->
+		<div class="floating-symbols">
+			<div class="floating-symbol symbol-1">📋</div>
+			<div class="floating-symbol symbol-2">💰</div>
+			<div class="floating-symbol symbol-3">🏛️</div>
+			<div class="floating-symbol symbol-4">📊</div>
+			<div class="floating-symbol symbol-5">⚖️</div>
+		</div>
 
-  <!-- Main Content -->
-  <section class="section-padding bg-white">
-    <div class="container-max">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-        <div>
-          <h2 class="font-heading text-3xl font-bold text-primary-900 mb-6">
-            Expert Corporate Tax Solutions
-          </h2>
-          <p class="text-lg text-gray-700 leading-relaxed mb-6">
-            At <strong>IBATS CORP.</strong>, we provide <strong>professional corporate income tax services</strong> designed to help <strong>businesses maximize their tax efficiency</strong> while ensuring <strong>full compliance with Canada Revenue Agency (CRA) regulations</strong>.
-          </p>
-          <p class="text-lg text-gray-700 leading-relaxed mb-6">
-            Our experienced tax specialists stay updated on the latest <strong>tax laws and regulations</strong>, ensuring your business claims every <strong>deduction, credit, and tax-saving opportunity</strong> available.
-          </p>
-        </div>
-        <div class="relative">
-          <img 
-            src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
-            alt="Corporate tax planning and business financial documents" 
-            class="rounded-lg shadow-xl"
-          />
-          <div class="absolute inset-0 bg-primary-900/10 rounded-lg"></div>
-        </div>
-      </div>
+		<div class="container-max relative z-10">
+			<div class="grid lg:grid-cols-2 gap-12 items-center">
+				<!-- Left Content -->
+				<div class="text-white">
+					<div class="inline-flex items-center px-4 py-2 bg-blue-100/10 rounded-full text-blue-200 text-sm font-medium mb-6 backdrop-blur">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zm6 7a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-3 3a1 1 0 100 2h.01a1 1 0 100-2H10zm-4 1a1 1 0 011-1h.01a1 1 0 110 2H7a1 1 0 01-1-1zm1-4a1 1 0 100 2h.01a1 1 0 100-2H7zm2 0a1 1 0 100 2h.01a1 1 0 100-2H9zm2 0a1 1 0 100 2h.01a1 1 0 100-2H11zm2 0a1 1 0 100 2h.01a1 1 0 100-2H13zm-4-3a1 1 0 100 2h.01a1 1 0 100-2H9zm2 0a1 1 0 100 2h.01a1 1 0 100-2H11zm2 0a1 1 0 100 2h.01a1 1 0 100-2H13z"/>
+						</svg>
+						Corporate Income Tax Services
+					</div>
+					
+					<h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+						Corporate <span class="text-gradient-hero">Income Tax</span> Services
+					</h1>
+					
+					<p class="text-xl text-blue-100 mb-8 leading-relaxed">
+						Expert corporate tax planning, compliance, and optimization services to minimize tax liability and ensure regulatory compliance.
+					</p>
+					
+					<div class="flex flex-col sm:flex-row gap-4">
+						<a href="/contact" class="hero-btn-primary">
+							<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+							</svg>
+							Start Tax Planning
+						</a>
+						<a href="/plans-pricing" class="hero-btn-secondary">
+							<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+							</svg>
+							View Pricing
+						</a>
+					</div>
+				</div>
 
-      <!-- Services Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-        <!-- Corporate Tax Preparation -->
-        <div class="card p-8 text-center">
-          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-            </svg>
-          </div>
-          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
-            Corporate Tax Preparation
-          </h3>
-          <p class="text-gray-600 leading-relaxed">
-            Comprehensive preparation of corporate income tax returns, ensuring accuracy and compliance with CRA requirements while maximizing available deductions.
-          </p>
-        </div>
+				<!-- Right Content - Interactive Dashboard -->
+				<div class="relative">
+					<div class="magnetic-card bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10">
+						<div class="mb-6">
+							<h3 class="text-2xl font-bold text-white mb-4">Tax Savings Dashboard</h3>
+							<div class="grid grid-cols-2 gap-4">
+								<div class="bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl p-4">
+									<div class="text-white/80 text-sm font-medium">Tax Savings</div>
+									<div class="counter text-2xl font-bold text-white" data-target="125000">$0</div>
+								</div>
+								<div class="bg-gradient-to-r from-blue-500 to-cyan-600 rounded-xl p-4">
+									<div class="text-white/80 text-sm font-medium">Effective Rate</div>
+									<div class="counter text-2xl font-bold text-white" data-target="18">0%</div>
+								</div>
+								<div class="bg-gradient-to-r from-purple-500 to-indigo-600 rounded-xl p-4">
+									<div class="text-white/80 text-sm font-medium">Deductions</div>
+									<div class="counter text-2xl font-bold text-white" data-target="85000">$0</div>
+								</div>
+								<div class="bg-gradient-to-r from-orange-500 to-red-600 rounded-xl p-4">
+									<div class="text-white/80 text-sm font-medium">Credits Applied</div>
+									<div class="counter text-2xl font-bold text-white" data-target="24000">$0</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="bg-white/5 rounded-xl p-4">
+							<div class="text-white/80 text-sm font-medium mb-2">Compliance Status</div>
+							<div class="space-y-2">
+								<div class="flex items-center justify-between">
+									<span class="text-white text-sm">Federal Filing</span>
+									<div class="flex items-center">
+										<div class="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
+										<span class="text-green-400 text-xs">Complete</span>
+									</div>
+								</div>
+								<div class="flex items-center justify-between">
+									<span class="text-white text-sm">State Filing</span>
+									<div class="flex items-center">
+										<div class="w-2 h-2 bg-blue-400 rounded-full mr-2"></div>
+										<span class="text-blue-400 text-xs">In Progress</span>
+									</div>
+								</div>
+								<div class="flex items-center justify-between">
+									<span class="text-white text-sm">Quarterly Reports</span>
+									<div class="flex items-center">
+										<div class="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
+										<span class="text-green-400 text-xs">Current</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-        <!-- Tax Planning & Strategy -->
-        <div class="card p-8 text-center">
-          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-          </div>
-          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
-            Tax Planning & Strategy
-          </h3>
-          <p class="text-gray-600 leading-relaxed">
-            Strategic tax planning to minimize your corporate tax burden through legal tax optimization strategies and timing of income and expenses.
-          </p>
-        </div>
+	<!-- Services Grid -->
+	<section class="section-padding bg-white">
+		<div class="container-max">
+			<div class="text-center mb-16">
+				<h2 class="text-4xl font-bold text-gray-900 mb-4">Corporate Tax Services</h2>
+				<p class="text-lg text-gray-600 max-w-3xl mx-auto">Comprehensive tax solutions for corporations of all sizes</p>
+			</div>
 
-        <!-- CRA Compliance -->
-        <div class="card p-8 text-center">
-          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.586-4.586a2 2 0 112.828 2.828L9 16.586V14h-2.586L9 16.586z"></path>
-            </svg>
-          </div>
-          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
-            CRA Compliance
-          </h3>
-          <p class="text-gray-600 leading-relaxed">
-            Ensure full compliance with Canada Revenue Agency regulations and deadlines, avoiding penalties and interest charges.
-          </p>
-        </div>
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Tax Planning -->
+				<div class="magnetic-service-card group">
+					<div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+						<svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zm6 7a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-3 3a1 1 0 100 2h.01a1 1 0 100-2H10zm-4 1a1 1 0 011-1h.01a1 1 0 110 2H7a1 1 0 01-1-1zm1-4a1 1 0 100 2h.01a1 1 0 100-2H7zm2 0a1 1 0 100 2h.01a1 1 0 100-2H9zm2 0a1 1 0 100 2h.01a1 1 0 100-2H11zm2 0a1 1 0 100 2h.01a1 1 0 100-2H13zm-4-3a1 1 0 100 2h.01a1 1 0 100-2H9zm2 0a1 1 0 100 2h.01a1 1 0 100-2H11zm2 0a1 1 0 100 2h.01a1 1 0 100-2H13z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-3">Strategic Tax Planning</h3>
+					<p class="text-gray-600 mb-4">Proactive tax strategies to minimize liability and maximize after-tax income.</p>
+					<ul class="text-sm text-gray-500 space-y-1">
+						<li>• Year-round planning</li>
+						<li>• Tax projections</li>
+						<li>• Timing strategies</li>
+						<li>• Entity optimization</li>
+					</ul>
+				</div>
 
-        <!-- Business Deductions -->
-        <div class="card p-8 text-center">
-          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
-            </svg>
-          </div>
-          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
-            Business Deductions
-          </h3>
-          <p class="text-gray-600 leading-relaxed">
-            Identify and maximize all eligible business deductions including operating expenses, capital cost allowance, and research and development credits.
-          </p>
-        </div>
+				<!-- Tax Compliance -->
+				<div class="magnetic-service-card group">
+					<div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+						<svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-3">Tax Compliance</h3>
+					<p class="text-gray-600 mb-4">Ensure full compliance with federal, state, and local tax requirements.</p>
+					<ul class="text-sm text-gray-500 space-y-1">
+						<li>• Federal tax returns</li>
+						<li>• State tax filings</li>
+						<li>• Quarterly payments</li>
+						<li>• Extension management</li>
+					</ul>
+				</div>
 
-        <!-- Tax Credits & Incentives -->
-        <div class="card p-8 text-center">
-          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-            </svg>
-          </div>
-          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
-            Tax Credits & Incentives
-          </h3>
-          <p class="text-gray-600 leading-relaxed">
-            Help you take advantage of various tax credits and government incentives available to Canadian businesses.
-          </p>
-        </div>
+				<!-- Tax Credits & Incentives -->
+				<div class="magnetic-service-card group">
+					<div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+						<svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"/>
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-3">Credits & Incentives</h3>
+					<p class="text-gray-600 mb-4">Identify and maximize available tax credits and incentives.</p>
+					<ul class="text-sm text-gray-500 space-y-1">
+						<li>• R&D tax credits</li>
+						<li>• Work opportunity credits</li>
+						<li>• Energy incentives</li>
+						<li>• State-specific credits</li>
+					</ul>
+				</div>
 
-        <!-- Year-Round Support -->
-        <div class="card p-8 text-center">
-          <div class="w-16 h-16 bg-gradient-to-br from-primary-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-          </div>
-          <h3 class="font-heading text-xl font-semibold text-primary-900 mb-4">
-            Year-Round Support
-          </h3>
-          <p class="text-gray-600 leading-relaxed">
-            Ongoing support throughout the year for tax-related questions and strategic business decisions.
-          </p>
-        </div>
-      </div>
+				<!-- Multi-State Tax -->
+				<div class="magnetic-service-card group">
+					<div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+						<svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-3">Multi-State Tax</h3>
+					<p class="text-gray-600 mb-4">Navigate complex multi-state tax obligations and nexus issues.</p>
+					<ul class="text-sm text-gray-500 space-y-1">
+						<li>• Nexus analysis</li>
+						<li>• Apportionment planning</li>
+						<li>• State conformity</li>
+						<li>• Interstate commerce</li>
+					</ul>
+				</div>
 
-      <!-- Benefits Section -->
-      <div class="bg-gray-50 rounded-2xl p-8 lg:p-12 mb-16">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 class="font-heading text-3xl font-bold text-primary-900 mb-6">
-              Why Choose Our Corporate Tax Services?
-            </h2>
-            <div class="space-y-4">
-              <div class="flex items-start space-x-4">
-                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="font-semibold text-primary-900 mb-1">Maximize Tax Savings</h3>
-                  <p class="text-gray-600">Our experts identify every available deduction and credit to minimize your corporate tax liability.</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start space-x-4">
-                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="font-semibold text-primary-900 mb-1">Stay Compliant</h3>
-                  <p class="text-gray-600">Ensure full compliance with CRA regulations and avoid costly penalties and interest charges.</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start space-x-4">
-                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="font-semibold text-primary-900 mb-1">Expert Knowledge</h3>
-                  <p class="text-gray-600">Work with tax professionals who stay current with the latest Canadian tax laws and regulations.</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start space-x-4">
-                <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="font-semibold text-primary-900 mb-1">Strategic Planning</h3>
-                  <p class="text-gray-600">Receive strategic tax planning advice to optimize your business structure and operations.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <img 
-              src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
-              alt="Corporate tax documents and business planning" 
-              class="rounded-lg shadow-lg"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+				<!-- Tax Audit Support -->
+				<div class="magnetic-service-card group">
+					<div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+						<svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-3">Audit Defense</h3>
+					<p class="text-gray-600 mb-4">Professional representation and support during tax audits.</p>
+					<ul class="text-sm text-gray-500 space-y-1">
+						<li>• Audit representation</li>
+						<li>• Document preparation</li>
+						<li>• Negotiation support</li>
+						<li>• Appeals process</li>
+					</ul>
+				</div>
 
-  <!-- CTA Section -->
-  <section class="section-padding gradient-bg">
-    <div class="container-max text-center">
-      <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-4">
-        Ready to Optimize Your Corporate Taxes?
-      </h2>
-      <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-        Let our corporate tax experts help you minimize your tax burden while staying fully compliant.
-      </p>
-      <a href="/contact" class="btn-primary bg-white text-primary-900 hover:bg-gray-100 text-lg px-8 py-4">
-        Schedule Tax Consultation
-      </a>
-    </div>
-  </section>
+				<!-- International Tax -->
+				<div class="magnetic-service-card group">
+					<div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+						<svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-3">International Tax</h3>
+					<p class="text-gray-600 mb-4">Complex international tax planning and compliance services.</p>
+					<ul class="text-sm text-gray-500 space-y-1">
+						<li>• Transfer pricing</li>
+						<li>• Foreign operations</li>
+						<li>• Treaty planning</li>
+						<li>• FATCA compliance</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  <Footer />
+	<!-- CTA Section -->
+	<section class="section-padding bg-gradient-to-br from-blue-600 to-blue-800 relative overflow-hidden">
+		<div class="absolute inset-0">
+			<div class="blob blob-cta-1"></div>
+			<div class="blob blob-cta-2"></div>
+		</div>
+		
+		<div class="container-max relative z-10 text-center">
+			<h2 class="text-4xl font-bold text-white mb-6">Ready to Optimize Your Corporate Taxes?</h2>
+			<p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+				Let our tax experts help you minimize tax liability and ensure full compliance with all regulations.
+			</p>
+			
+			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<a href="/contact" class="cta-button-primary">
+					<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+					</svg>
+					Schedule Tax Consultation
+				</a>
+				<a href="/plans-pricing" class="cta-button-secondary">
+					<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+					</svg>
+					View Tax Plans
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<Footer />
+
+	<script>
+		// Counter Animation for currency and percentages
+		function animateCounter(element: Element, target: number, duration = 2000) {
+			const start = 0;
+			const increment = target / (duration / 16);
+			let current = start;
+			const isPercentage = element.textContent?.includes('%');
+			
+			const timer = setInterval(() => {
+				current += increment;
+				if (current >= target) {
+					current = target;
+					clearInterval(timer);
+				}
+				if (element instanceof HTMLElement) {
+					if (isPercentage) {
+						element.textContent = Math.floor(current) + '%';
+					} else {
+						element.textContent = '$' + Math.floor(current).toLocaleString();
+					}
+				}
+			}, 16);
+		}
+
+		// Intersection Observer for animations
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('revealed');
+					
+					// Trigger counter animations
+					if (entry.target.querySelector('.counter')) {
+						const counters = entry.target.querySelectorAll('.counter');
+						counters.forEach((counter, index) => {
+							setTimeout(() => {
+								const targetAttr = counter.getAttribute('data-target');
+								if (targetAttr) {
+									const target = parseInt(targetAttr);
+									animateCounter(counter, target);
+								}
+							}, index * 200);
+						});
+					}
+				}
+			});
+		}, {
+			threshold: 0.1,
+			rootMargin: '0px 0px -50px 0px'
+		});
+
+		// Observe all animated elements
+		document.querySelectorAll('.magnetic-card, .magnetic-service-card, .counter').forEach(el => {
+			observer.observe(el);
+		});
+	</script>
 </Layout> 
